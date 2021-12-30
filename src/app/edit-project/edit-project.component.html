@@ -1,0 +1,32 @@
+<h3 class="mt-3">Edit Project</h3>
+<div class="text-right">
+    <a class="btn btn-primary" routerLink="/leader/project">Back</a>
+</div>
+<form class="mt-4" class="formInput" (ngSubmit)="onSubmit(edit)" #edit='ngForm'>
+    <div class="row align-items-center mb-3">
+        <div class="col-2">
+            <label for="name" class="col-form-label font-weight-bold">Project Name</label>
+        </div>
+        <div class="col-10">
+            <input type="text" id="name" class="form-control" [(ngModel)]="project.projectName" name="projectName" #projectName='ngModel' required>
+        </div>
+    </div>
+    <div class="row align-items-center mb-3">
+        <div class="col-2">
+            <label for="dateStart" class="col-form-label font-weight-bold">Date of Start</label>
+        </div>
+        <div class="col-10">
+            <input type="date" id="dateStart" class="form-control" [(ngModel)]="project.dateStart" name="dateStart" #dateStart='ngModel' required>
+        </div>
+    </div>
+    <div class="row align-items-center mb-3">
+        <div class="col-2">
+            <label for="size" class="col-form-label font-weight-bold">Team Size</label>
+        </div>
+        <div class="col-10">
+            <input type="number" id="size" class="form-control" [(ngModel)]="project.teamSize" name="teamSize" #teamSize='ngModel' required>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]='edit.invalid'>Edit</button>
+</form>

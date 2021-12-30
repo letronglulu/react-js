@@ -1,0 +1,29 @@
+<h3 class="mt-3">Projects</h3>
+<div class="text-right">
+    <a class="btn btn-primary" [routerLink]="['create']">Create</a>
+</div>
+<div class="formInput">
+    <table class="table mt-4">
+        <thead>
+            <th>ProjectId</th>
+            <th>Project name</th>
+            <th>Date of Start</th>
+            <th>Team Size</th>
+            <th>Actions</th>
+        </thead>
+        <tbody>
+            <tr *ngFor = 'let p of projects' >
+                <td>{{p._id}}</td>
+                <td>{{p.projectName}}</td>
+                <td>{{p.dateStart}}</td>
+                <td>{{p.teamSize}}</td>
+                <td>
+                    <a class="btn btn-primary" routerLink="edit/{{p._id}}">Edit</a>
+                    <button class="btn btn-danger ml-3" (click)="remove(p._id)">Delete</button>
+                </td>
+            </tr>
+           
+
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,33 @@
+<div class="container-fluid bg-login">
+    <div class="wrap-login">
+        <form (ngSubmit)='onSubmit(login)' #login='ngForm'>
+            <h3>Login</h3>
+            <div class="wrap-input">
+                <input type="text" placeholder="Email"[(ngModel)] = "user.email" name= "email" #email='ngModel'
+                required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            </div>
+
+            <div style="color: red; font-style: italic; padding-top: 10px;"
+            [hidden]='email.valid||(email?.pristine&&email?.untouched)'>
+            <div *ngIf="email.errors?.required">Email is required</div>
+            <div *ngIf="email.errors?.pattern">This is not email</div>
+        </div>
+
+            <div class="wrap-input2" >
+                <input type="password" placeholder="Password" [(ngModel)]="user.password" name="password"
+                #password='ngModel' required>
+            </div>
+
+            <div style="color: red; font-style: italic; padding-top: 10px;"
+            [hidden]='password.valid||(password?.pristine&&password?.untouched)'>
+            <div *ngIf="password.errors?.required">Password is required</div>
+        </div>
+
+
+            <div class="form-btn">
+                <button type="submit" [disabled]="login.invalid">Login</button>
+            </div>
+
+        </form>
+    </div>
+</div>

@@ -1,0 +1,144 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*,
+*:hover,
+*:focus {
+    outline: none;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+p{
+    padding: 0;
+}
+.info{
+    text-align: center;
+}
+
+.list-group-item{
+    padding: 0.75rem 1rem;
+}
+
+span.badge.bg-danger{
+    color: #fff;
+}
+
+.team__customer{
+    margin-top: 30px;
+}
+.team__customer h6{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.table.table-borderless tbody tr td:last-child{
+    text-align: right;
+}
+
+.members__of__team li{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.members__of__team li ul{
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.members__of__team li ul li{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.members__of__team li ul li span{
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+    margin-left: 30px;
+    color: red;
+}
+
+body{
+    background-color: #f8f8f8;
+}
+.wrap-login {
+    width: 390px;
+    background: -webkit-linear-gradient( top right,#E55D87,#5FC3E4);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 77px 55px;
+    
+    margin: 60px auto;
+}
+
+.wrap-login .wrap-input{
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 37px;
+}
+.wrap-login .wrap-input2{
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 80px;
+}
+.wrap-login form h3{
+    display: block;
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+    padding: 26px;
+}
+
+.wrap-login .wrap-input input, .wrap-login .wrap-input2 input{
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #fff;
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  height: 45px;
+  background: 0 0;
+  padding: 0 5px;
+}
+
+.wrap-login  .form-btn{
+    width: 100%;
+    display: block;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+
+.wrap-login .form-btn button{
+    font-size: 15px;
+    color: #000;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    background: #fff;
+}
+
+.formInput{
+    background-color: #fff;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+    padding: 50px 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
